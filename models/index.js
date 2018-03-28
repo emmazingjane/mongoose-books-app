@@ -4,10 +4,10 @@ mongoose.connect("mongodb://localhost/book-app");
 
 var BookModel = require("./book.js");
 // require the page that has the book model
-// var AuthorModel = require('./author.js')
+var AuthorModel = require('./author.js')
 
 module.exports = {
-	Book: BookModel
-	// Author: AuthorModel
+	Book: BookModel,
+	Author: AuthorModel
 }
 //  all of the models that it can use
